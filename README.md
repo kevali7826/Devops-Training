@@ -1,2 +1,2 @@
-# Devops-Training
+# AWS-DevOps
 All about DevOps: AWS,DOCKER,KUBERNETES,ANSIBLE,LINUX 
