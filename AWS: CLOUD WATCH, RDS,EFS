@@ -1,0 +1,28 @@
+# AWS Cloud Monitoring & Storage Project
+
+## 🚀 Overview  
+This project demonstrates how to set up **AWS CloudWatch, SNS, RDS, and EFS** for monitoring and scalable storage.
+
+## 🛠️ Technologies Used  
+- **AWS CloudWatch** – Configured alarms to monitor EC2 and RDS performance.  
+- **AWS SNS** – Integrated with CloudWatch to send **email & SMS notifications** on alarms.  
+- **AWS RDS (Relational Database Service)** – Implemented a **MySQL/PostgreSQL** database with automated backups.  
+- **AWS EFS (Elastic File System)** – Configured scalable, shared storage for multiple EC2 instances.  
+
+## 📌 Key Features  
+✅ **CloudWatch Alarms:** Automatic monitoring of CPU, memory, and DB connections.  
+✅ **SNS Notifications:** Alerts sent via email when a threshold is breached.  
+✅ **RDS Database:** Deployed a relational database and optimized performance.  
+✅ **EFS Storage:** Shared file system across multiple EC2 instances.  
+
+## 📖 Setup Guide  
+1. **Create a CloudWatch Alarm** for EC2 or RDS.  
+2. **Link it with SNS** to receive notifications.  
+3. **Deploy an RDS instance** and connect it to an application.  
+4. **Configure EFS storage** and mount it on EC2.  
+
+## 📷 Screenshots  
+(Screenshots of AWS Console showing CloudWatch, SNS, RDS, and EFS setup)  
+
+## 📜 License  
+This project is open-source and available under the MIT License.  
