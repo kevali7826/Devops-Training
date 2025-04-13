@@ -1,0 +1,57 @@
+# 🚀 CI/CD Pipeline Project - DevOps Training
+
+This project demonstrates a complete CI/CD pipeline setup using **Jenkins**, **SonarQube**, **Trivy**, **Maven**, **Docker**, and **Kubernetes**.
+
+---
+
+## 📁 Tools Used:
+- **Jenkins** – Automation server to run pipeline jobs
+- **Maven** – To build the Java project
+- **SonarQube** – For static code analysis and code quality
+- **Trivy** – For vulnerability scanning
+- **Docker** – To containerize the application
+- **Kubernetes** – To deploy and manage the application
+
+---
+
+## 📌 Pipeline Stages:
+
+### 1. **Code Commit**
+- Code is pushed to GitHub repository.
+
+### 2. **Jenkins Job Triggered**
+- Jenkins polls the repo or gets triggered by webhook.
+- `Jenkinsfile` defines pipeline steps.
+
+### 3. **Build Stage (Maven)**
+- Jenkins runs `mvn clean package`.
+- Creates a `.jar` file.
+
+### 4. **Code Quality Check (SonarQube)**
+- Jenkins connects to SonarQube server using Sonar plugin.
+- Runs code analysis and generates report.
+
+### 5. **Vulnerability Scan (Trivy)**
+- Jenkins runs Trivy to scan Docker image for vulnerabilities.
+
+### 6. **Docker Image Build & Push**
+- Docker image is built using Dockerfile.
+- Pushed to DockerHub or private registry.
+
+### 7. **Kubernetes Deployment**
+- Jenkins uses `kubectl` to deploy application to cluster.
+- YAML files used: `deployment.yaml`, `service.yaml`
+
+---
+
+## 📂 Folder Structure:
+```plaintext
+CI-CD-Pipeline-Project/
+│
+├── Jenkinsfile
+├── Dockerfile
+├── deployment.yaml
+├── service.yaml
+├── trivy-scan.sh
+├── sonar-project.properties
+└── src/
